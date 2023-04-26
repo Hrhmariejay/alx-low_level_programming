@@ -5,15 +5,11 @@
  */
 int main(void)
 {
-int i, Z = 0;
-while (i < 1024)
-{
-if ((i % 3 == 0) || (i % 5 == 0))
-{
-z += i;
+int a, b;
+for (a = 1; a < 1024; a++)
+if ((a % 3) == 0 || (a % 5) == 0)
+b += a;
 }
-i++;
-}
-printf("%d\n", z);
+printf("%d\n", b);
 return (0);
 }
